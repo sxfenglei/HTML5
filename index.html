@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="Author" content="sxfenglei"> 
+<link rel="stylesheet"  href="css/style.css" />
+<style type="text/css"> 
+
+</style>
+<title>摇一摇</title> 
+</head>
+
+<body> 
+<!-- 摇奖 -->
+<div id="yaojiang">
+	<!--摇一摇图片-->
+	<div id="hand" class="hand hand-animate"></div>
+	<!-- 摇一摇结果显示区域 -->
+	<div id="result"></div> 
+	<button id="btn" class="btnHide" >领取奖品</button>
+</div>
+
+<!-- 登记 -->
+<div id="dengji" style="display:none">
+	<fieldSet>
+		<legend>*姓名:</legend>
+		<lebel>
+			<input type="text" id="name" />
+		</lebel>
+	</fieldSet>
+	
+	<fieldSet>
+		<legend>*电话:</legend>
+		<lebel>
+			<input type="tel" id="tel" />
+		</lebel>
+	</fieldSet> 
+
+	<fieldSet>
+		<legend>邮箱:</legend>
+		<lebel>
+			<input type="email" id="email" />
+		</lebel>
+	</fieldSet> 
+	
+	<button id="btnForm">确认</button>
+</div>
+
+<!-- 结果 -->
+<div id="jieguo" style="display:none">
+	<p>领取成功!</p>
+	<p><a href="javascript:window.location.reload();">继续摇奖</a></p>
+</div>
+
+<input type="hidden" id="text" value="" />
+
+<!--H5摇一摇插件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/shake.js"></script>
+<script src="js/app.js"></script>
+<script>
+ 
+</script>
+</body>
+</html>
